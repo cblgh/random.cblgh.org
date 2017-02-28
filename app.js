@@ -23,7 +23,8 @@ if ('development' == app.get('env')) {
 humerousRedirects = ["http://www.asciiartfarts.com/random.cgi", "http://wikihow.com/Special:Randomizer",
                     "http://en.wikipedia.org/wiki/Special:Random", "http://randomcolour.com/",
                     "http://wordsmith.org/words/random.cgi", "http://www.randomhaiku.com/",
-                    "http://www.reddit.com/r/random", "http://poetryoutloud.org/poems-and-performance/random-poem"];
+                    "http://www.reddit.com/r/random", "http://poetryoutloud.org/poems-and-performance/random-poem",
+                    "https://tao.cblgh.org"];
 
 app.get("*", function(req, res) {
     res.redirect(humerousRedirects[Math.floor(Math.random() * humerousRedirects.length)]);
