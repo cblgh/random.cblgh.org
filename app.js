@@ -8,7 +8,7 @@ var debug = false;
 
 
 // all environments
-app.set('port', '9999');
+app.set('port', '7331');
 app.use(express.logger('dev'));
 app.use(express.json());
 
